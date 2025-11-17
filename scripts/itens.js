@@ -12,7 +12,7 @@ detalhes.id = "detalhes";
 document.body.appendChild(detalhes);
 detalhes.style.display = "none";
 
-const IP_DO_BACKEND = "192.168.56.1";
+const IP_DO_BACKEND = "10.88.199.138";
 const PORTA = 3001;
 const URL_BASE_API = `http://${IP_DO_BACKEND}:${PORTA}`;
 
