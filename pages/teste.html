@@ -3,25 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Buscar Item</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Itens - Lost & Found</title>
     <link rel="stylesheet" href="../assets/style/itens.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <h2>Buscar Item</h2>
 
-    <!-- Campo para buscar pelo nome -->
-    <input type="text" id="inputBuscar" placeholder="Digite o nome do item...">
-    <button id="btnBuscar">Buscar por nome</button>
+    <!-- HEADER -->
+    <header class="topbar">
+        <img src="../assets/img/lostandfound.png" class="logo">
+        <h1>Buscar Itens</h1>
+        <i class="fa-solid fa-user user"></i>
+    </header>
 
-    <br><br>
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+        <div class="search-box">
+            <input type="text" id="inputBuscar" placeholder="Digite o nome do item...">
+            <button id="btnBuscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
 
-    <!-- Botão para buscar todos -->
-    <button onclick="buscarItens()">Buscar Todos os Itens</button>
+        <button id="btnTodos" class="btn-all">Mostrar todos os itens</button>
+    </section>
 
-    <div id="resultado"></div>
-
-    <div id="imagem"></div>
+    <!-- RESULTADOS -->
+    <section class="results">
+        <h2>Resultados</h2>
+        <div id="itemsContainer" class="items-grid"></div>
+    </section>
 
     <script src="../scripts/itensbackup.js"></script>
 </body>
