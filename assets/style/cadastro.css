@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -11,6 +10,8 @@ html, body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* ================= HEADER ================= */
 
 header {
     background-color: #5b1622;
@@ -36,15 +37,28 @@ header {
     height: 100px;
 }
 
+/* ================= MAIN E CENTRALIZAÇÃO ================= */
+
+main {
+    min-height: calc(100vh - 60px - 60px); /* espaço do header e footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    padding-bottom: 80px; /* para não encostar no footer */
+}
+
+/* ================= FORMULÁRIO ================= */
 
 .container {
     width: 50%;
     margin: 0 auto;
+    margin-top: 150px;
     background: white;
     padding: 40px;
     border-radius: 20px;
     border: 8px solid #5d0f15;
-    text-align: center
+    text-align: center;
 }
 
 #titulo {
@@ -69,7 +83,6 @@ header {
     background: #7a1f2b;
     font-size: 15px;
     margin-left: 65px;
-
 }
 
 .linha-centro input {
@@ -118,15 +131,10 @@ input::placeholder {
     background-color: #5b1622;
 }
 
-main {
-    min-height: calc(100vh - 80px - 60px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0; 
-}
+/* ================= FOOTER ================= */
 
 footer {
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -140,4 +148,3 @@ footer {
     box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
     z-index: 1000;
 }
-
