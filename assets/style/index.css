@@ -42,34 +42,34 @@ header {
 
 /* MAIN */
 main {
-    height: calc(100vh - 100px - 60px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    overflow-y: auto;
-    box-sizing: border-box;
+  height: calc(100vh - 100px - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 /* CONTAINER */
 .container, main section {
-    width: 35%;
-    padding: 20px;
-    border: 5px solid #5d0f15;
-    margin: 0 auto;
-    background: white;
-    border-radius: 20px;
-    text-align: center;
-    max-width: 90%;
-    box-sizing: border-box;
+  width: 35%;
+  padding: 20px;
+  border: 5px solid #5d0f15;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 90%;
+  box-sizing: border-box;
 }
 
 /* Títulos */
 #titulo, #login-da-canta {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 
