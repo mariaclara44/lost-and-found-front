@@ -9,27 +9,21 @@
 
 body {
     background: #f4f4f4;
-    padding-top: 90px;
+
 }
 
 /* HEADER */
 header {
     background-color: #5b1622;
-    width: 100%;
-    height: 90px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 25px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-    z-index: 10;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 100px;
 }
 
 header .logo img {
-    height: 65px;
+    height: 100px;
 }
 
 header .usuario i {
@@ -41,25 +35,27 @@ header .usuario i {
 /* INTRO */
 .intro {
     text-align: center;
+    margin: 60px 0 10px;
+
 }
 
 .intro h1 {
     font-size: 4.5rem;
-    color: #000000;
+    color: #5b1622;
     font-weight: 800;
 }
 
 .intro p {
     font-size: 1.2rem;
     margin-top: 5px;
-    color: #444;
+    color:  #302e2e;
 }
 
 /* SEARCH BAR */
 .search-bar {
     margin: 20px auto;
-    width: 85%;
-    background: #ffffff;
+    width: 38%;
+    background: #5b1622;
     padding: 12px 16px;
     border-radius: 35px;
     display: flex;
@@ -70,7 +66,7 @@ header .usuario i {
 .search-bar i {
     font-size: 26px;
     margin-right: 12px;
-    color: #33080f;
+    color: #ffffff;
 }
 
 .search-bar input {
@@ -78,6 +74,8 @@ header .usuario i {
     border: none;
     outline: none;
     font-size: 1rem;
+    color: #5b1622;
+    background: transparent;
 }
 
 /* CENTER IMAGE */
@@ -89,7 +87,7 @@ header .usuario i {
 }
 
 .center-image img {
-    width: 380px;
+    width: 43%;
     height: auto;
 }
 
