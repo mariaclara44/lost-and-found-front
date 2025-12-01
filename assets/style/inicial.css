@@ -123,7 +123,6 @@ header .usuario i {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* EFEITO AO PASSAR O MOUSE */
 .item-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
@@ -145,14 +144,13 @@ header .usuario i {
     font-weight: 700;
 }
 
-/* TEXTO DO CARD */
 .item-card p {
     font-size: 0.9rem;
     color: #444;
     margin-top: 6px;
 }
 
-/* BOTÃO VER DETALHES – ESTILO MODERNO */
+/* BOTÃO */
 .item-card button {
     margin-top: 14px;
     width: 85%;
@@ -162,7 +160,6 @@ header .usuario i {
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
 
     border: none;
     border-radius: 50px;
@@ -177,14 +174,12 @@ header .usuario i {
     transition: all 0.25s ease-in-out;
 }
 
-/* HOVER DO BOTÃO */
 .item-card button:hover {
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 6px 16px rgba(91, 22, 34, 0.45);
     background: linear-gradient(135deg, #8b2435, #b53148);
 }
 
-/* CLICK DO BOTÃO */
 .item-card button:active {
     transform: scale(0.97);
     box-shadow: 0 2px 8px rgba(91, 22, 34, 0.35);
@@ -212,44 +207,113 @@ header .usuario i {
     border-radius: 14px;
     text-align: center;
     position: relative;
-    animation: fadeIn 0.25s ease;
 }
 
-.modal-content img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
-
-.modal-content h2 {
-    margin-bottom: 8px;
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.modal-content p {
-    margin: 5px 0;
-    font-size: 1rem;
-    color: #333;
-}
-
-.close {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* ANIMAÇÃO MODAL */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
+/* RESPONSIVIDADE */
+@media (max-width: 1200px) {
+    .intro h1 {
+        font-size: 3.5rem;
     }
-    to {
-        opacity: 1;
-        transform: scale(1);
+
+    .search-bar {
+        width: 50%;
+    }
+
+    .center-image img {
+        width: 55%;
+    }
+}
+
+@media (max-width: 900px) {
+    header .logo img {
+        height: 80px;
+    }
+
+    header .usuario i {
+        font-size: 32px;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .search-bar {
+        width: 65%;
+    }
+
+    .center-image img {
+        width: 65%;
+    }
+}
+
+@media (max-width: 700px) {
+    .intro {
+        margin: 40px 0 5px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-bar {
+        width: 80%;
+        padding: 10px 14px;
+    }
+
+    .items-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .center-image img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 80px;
+    }
+
+    header .logo img {
+        height: 70px;
+    }
+
+    header .usuario i {
+        font-size: 28px;
+    }
+
+    .intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-card img {
+        height: 130px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 380px) {
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro h1 {
+        font-size: 1.9rem;
     }
 }
 
