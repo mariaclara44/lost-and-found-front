@@ -1,0 +1,116 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #5b1622;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 100px;
+}
+
+.logo {
+    height: 100px;
+}
+
+header .icons i {
+    font-size: 28px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 120px;
+    padding: 0 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.titulo {
+    background-color: #5b1622;
+    color: white;
+    font-size: 28px;
+    padding: 15px 40px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 130px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(#4E0F18 50px, #6e1c2b 50px);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card h3 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.icon {
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+footer {
+    background-color: #5b1622;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;          
+    font-size: 15px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: 320px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .icon {
+        margin-top: 20px;
+    }
+}
