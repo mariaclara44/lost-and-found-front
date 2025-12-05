@@ -11,6 +11,20 @@
     --shadow-dark: rgba(0, 0, 0, 0.20);
 }
 
+/* ==============================================
+   ANIMAÇÃO: Keyframes para o efeito "Surgir"
+   ============================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -126,13 +140,15 @@ header .usuario a:hover i {
 
 .items-grid {
     display: grid;
-    /* Configuração responsiva por padrão: minmax(200px) permite 
-       que o grid se ajuste automaticamente em 3, 4 ou mais colunas */
+    /* Configuração responsiva por padrão */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
     padding-bottom: 50px;
 }
 
+/* ==============================================
+   ESTILIZAÇÃO E ANIMAÇÕES DOS CARDS (Atualizado)
+   ============================================== */
 .item-card {
     background: var(--card-background);
     border-radius: 20px;
@@ -145,12 +161,30 @@ header .usuario a:hover i {
     text-align: center;
 
     box-shadow: 0 8px 18px var(--shadow-light);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação */
+
+    /* Transições Suaves */
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease, 
+                opacity 0.4s ease, 
+                filter 0.3s ease;
+}
+
+/* Estado Inicial/Escondido para uso com JS (Pesquisa) */
+.item-card.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    display: none;
+}
+
+/* Classe para Ativar a Animação de Entrada/Pesquisa (via JS) */
+.item-card.animate {
+    animation: fadeInUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    opacity: 0; /* Começa invisível para a animação funcionar */
 }
 
 .item-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(91, 22, 34, 0.2);
+    transform: translateY(-8px) scale(1.02); /* Levemente maior no hover */
+    box-shadow: 0 15px 30px rgba(91, 22, 34, 0.25); /* Sombra mais destacada */
 }
 
 .item-card img {
@@ -159,6 +193,11 @@ header .usuario a:hover i {
     object-fit: cover;
     border-radius: 16px;
     filter: brightness(0.98);
+    transition: filter 0.3s ease; /* Transição para o efeito de hover */
+}
+
+.item-card:hover img {
+    filter: brightness(1.05) saturate(1.05); /* Leve brilho/saturação no hover */
 }
 
 .item-card h3 {
