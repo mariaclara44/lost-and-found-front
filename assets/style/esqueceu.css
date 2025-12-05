@@ -1,8 +1,6 @@
 
-/* CONTAINER */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
 
-/* Zera espaçamentos e impede rolagem geral */
 html, body {
     margin: 0;
     padding: 0;
@@ -14,7 +12,6 @@ html, body {
     overflow-y: hidden;
 }
 
-/* HEADER */
 header {
     background-color: #5b1622;
     display: flex;
@@ -40,7 +37,6 @@ header {
     height: 100px;
 }
 
-/* MAIN */
 main {
   height: calc(100vh - 100px - 60px);
   display: flex;
@@ -51,7 +47,6 @@ main {
   box-sizing: border-box;
 }
 
-/* CONTAINER */
 .container, main section {
   width: 35%;
   padding: 20px;
@@ -64,8 +59,7 @@ main {
   box-sizing: border-box;
 }
 
-/* Títulos */
-#titulo, #login-da-conta {
+#titulo, #redefinir-senha {
     font-size: 32px;
     font-weight: 900;
     color: #5b1622;
@@ -76,19 +70,9 @@ main {
 #criar-conta a {
     color: #000;
     text-decoration: none;
-    font-size: small;
 }
 
 #criar-conta a:hover {
-    color: #5b1622 !important;
-}
-
-#esqueceu-senha a {
-    color: #000;
-    text-decoration: none;
-}
-
-#esqueceu-senha a:hover {
     color: #5b1622 !important;
 }
 
@@ -106,7 +90,6 @@ input {
     box-sizing: border-box;
 }
 
-/* Botão */
 .botao {
     background-color: #7a1f2b;
     color: aliceblue;
@@ -119,7 +102,6 @@ input {
     border: none;
 }
 
-/* Botão */
 .botao {
     background-color: #7a1f2b;
     color: aliceblue;
