@@ -93,7 +93,9 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 108px;
- 
+    /*position: fixed; 
+    bottom: 0;
+    left: 0;*/
 }
 
 
