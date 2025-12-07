@@ -39,7 +39,7 @@ header .usuario i {
     font-size: 40px;
     color: white;
     cursor: pointer;
-    margin-left: 1150px;
+    margin-right: 10px;
 }
 
 header .usuario a:hover i {
