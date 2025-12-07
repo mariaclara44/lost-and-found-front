@@ -48,18 +48,18 @@ main {
 }
 
 .container, main section {
-  width: 25%;
+  width: 35%;
   padding: 20px;
   border: 5px solid #5d0f15;
   margin: 0 auto;
-  background: #ffffff;
+  background: white;
   border-radius: 20px;
   text-align: center;
   max-width: 90%;
   box-sizing: border-box;
 }
 
-#titulo, #login-da-conta {
+#titulo, #redefinir-senha {
     font-size: 32px;
     font-weight: 900;
     color: #5b1622;
@@ -70,20 +70,10 @@ main {
 #criar-conta a {
     color: #000;
     text-decoration: none;
-    font-size: small;
 }
 
 #criar-conta a:hover {
-    color: #5b1622;
-}
-
-#esqueceu-senha a {
-    color: #000;
-    text-decoration: none;
-}
-
-#esqueceu-senha a:hover {
-    color: #5b1622;
+    color: #5b1622 !important;
 }
 
 input {
@@ -100,9 +90,16 @@ input {
     box-sizing: border-box;
 }
 
-input:focus {
-    background: #7a1f2b; 
-    outline: none; 
+.botao {
+    background-color: #7a1f2b;
+    color: aliceblue;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border: none;
 }
 
 .botao {
@@ -111,15 +108,11 @@ input:focus {
     padding: 10px 25px;
     font-size: 14px;
     margin-top: 15px;
-    margin-bottom: 20px;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.5s;
     border: none;
-    text-decoration: none;
-    width: 200px; /* Definindo a largura diretamente */
 }
-
 
 .lembrar {
     width: 80%;
@@ -131,7 +124,6 @@ input:focus {
     gap: 6px;
     font-size: 12px;
     color: #000000;
-    margin-bottom: 20px;
 }
 
 .lembrar input[type="checkbox"] {
