@@ -103,10 +103,11 @@ footer {
     align-items: center;
     margin-top: 40px;
 
-    /* Caso a footer fosse fixa */
+    /* Caso a footer fosse fixa
     position: fixed; 
     bottom: 0;
-    left: 0;*/
+    left: 0; 
+    */
 }
 
 
