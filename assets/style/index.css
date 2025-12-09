@@ -103,7 +103,18 @@ input {
     box-sizing: border-box;
 }
 
-
+.botao {
+    background-color: #7a1f2b;
+    color: aliceblue;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border: none;
+    text-decoration: none;
+}
 
 .lembrar {
     width: 80%;
